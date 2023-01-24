@@ -140,11 +140,8 @@ can also build your own:
   * By default “use cached results” is checked  
   * Caching is per user only!! (cached results are not shared)  
 * Partition and Clustering 
-  * **Partititoned table** Partition management is key to fully maximizing BigQuery performance and cost when querying over a specific range — it results in scanning less data per query, and pruning is determined before query start time.
-    * A partitioned table is a special table that is divided into segments, called partitions, that make it easier to manage and query your data. You can typically split large tables into many smaller partitions using data ingestion time or TIMESTAMP/DATE column or an INTEGER column. BigQuery’s decoupled storage and compute architecture leverages column-based partitioning simply to minimize the amount of data that slot workers read from disk.
-  * **Clustered table** Clustering can improve the performance of certain types of queries, such as those using filter clauses and queries aggregating data.
-    * When a table is clustered in BigQuery, the table data is automatically organized based on the contents of one or more columns in the table’s schema. The columns you specify are used to collocate related data.
-    * When data is written to a clustered table, BigQuery sorts the data using the values in the clustering columns. These values are used to organize the data into multiple blocks in BigQuery storage. The order of clustered columns determines the sort order of the data. When new data is added to a table or a specific partition, BigQuery performs automatic re-clustering in the background to restore the sort property of the table or partition. Auto re-clustering is completely free and autonomous for the users - That is huge as these types of operations can be costly and require downtime in other systems
+  * **Partititoned table** - A partitioned table is divided into segments, called partitions, that make it easier to manage and query your data. By dividing a large table into smaller partitions, you can improve query performance and control costs by reducing the number of bytes read by a query. You partition tables by specifying a partition column which is used to segment the table. [Introduction to partitioned tables](https://cloud.google.com/bigquery/docs/partitioned-tables#when_to_use_partitioning)
+  * **Clustered table** Clustered tables in BigQuery are tables that have a user-defined column sort order using clustered columns. Clustered tables can improve query performance and reduce query costs. Clustering can improve the performance of certain types of queries, such as those using filter clauses and queries aggregating data. [Introduction to clustered tables](https://cloud.google.com/bigquery/docs/clustered-tables#when_to_use_clustering)
     * **Note: Clustering does not provide strict cost guarantees before running the query.**
 * Creating Custom Cost Controls:  
   * Manage costs by requesting a custom quota that specifies a limit on the amount of query data processed per day  
@@ -153,6 +150,12 @@ can also build your own:
   * User-level custom quotas are separately applied to each user or service account within a project.
 
 ### DEMO - partitioning and clustering
+
+codelab: <https://codelabs.developers.google.com/codelabs/gcp-bq-partitioning-and-clustering#0>
+docs:  
+  * partitioning - <https://cloud.google.com/bigquery/docs/partitioned-tables#when_to_use_partitioning>
+  * clustering: <https://cloud.google.com/bigquery/docs/clustered-tables#when_to_use_clustering>
+
 
 ## Best Practices
 
