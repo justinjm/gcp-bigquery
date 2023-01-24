@@ -30,12 +30,11 @@ bq query --location=US --destination_table $dataset_id.table_id_partitioned --no
 echo "[ INFO ] List all BigQuery tables within $dataset_id"
 bq ls $dataset_id
 
-echo "[ INFO ] Deleting BigQuery dataset names tempdataset1"
-bq rm -rf tempdataset1
+# echo "[ INFO ] Deleting BigQuery dataset names tempdataset1"
+# bq rm -f tempdataset1
 
 echo "[ INFO ] Displaying Schema"
 bq show "$project_id:$dataset_id.$table_id"
 
-
 echo "[ INFO ] Run BigQuery query"
-bq query "SELECT count(*) as count FROM `$project_id.$dataset_id.$table_id`"
+bq query --use_legacy_sql=false "SELECT count(*) as count FROM $project_id.$dataset_id.$table_id"
