@@ -199,3 +199,11 @@ Power BI
 ## Acknowledgements
 
 [zaratsian/gcp\_bigquery: Google Cloud BigQuery - Scripts and References](https://github.com/zaratsian/gcp_bigquery)
+
+
+## Open in Cloud Shell 
+
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fjustinjm%2Fgcp-bigquery)
+
+[Open in Cloud Shell  |  Google Cloud](https://cloud.google.com/shell/docs/open-in-cloud-shell)
