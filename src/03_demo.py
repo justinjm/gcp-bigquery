@@ -345,10 +345,10 @@ if __name__ == "__main__":
     
     # Insert data
     rows_to_insert = [
-            ('1000', 'dan',   'NC', 100.20, 0),
-            ('1001', 'dan',   'NC',  50.00, 1),
-            ('1002', 'frank', 'CA', 500.00, 0),
-            ('1003', 'dean',  'NV',  10.10, 1)
+            ('1000', 'Justin',   'NC', 100.20, 0),
+            ('1001', 'Stephanie',   'NC',  50.00, 1),
+            ('1002', 'Sally', 'CA', 500.00, 0),
+            ('1003', 'Mike',  'NV',  10.10, 1)
         ]
     bq_insert_rows(args['dataset_id'], args['table1_id'], rows_to_insert)
     
