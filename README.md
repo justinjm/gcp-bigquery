@@ -80,6 +80,13 @@ Each project that you create has a billing account attached to it. Any charges i
 * Admin
   * monitoring
 
+## Data sharing with Analytics Hub 
+
+[Introduction to Analytics Hub](https://cloud.google.com/bigquery/docs/analytics-hub-introduction)
+
+* Exchange valuable data and analytics assets securely and efficiently
+* a shared datasets as a contract between data publishers and subscribers. As a data publisher, you define the collection of tables and views that you want to deliver to your users.
+* On the subscriber side, when you subscribe to a shared dataset, you get a corresponding linked dataset inside of your project. For the subscriber It looks like any other dataset in your project except that it is read-only. You can join it with your data for shared insights. When you query a linked dataset, you pay for the BigQuery compute in your project while the publisher pays for the storage of the data.
 
 ## Monitoring & Audit Logging  
 
