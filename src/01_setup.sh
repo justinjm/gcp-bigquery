@@ -1,8 +1,16 @@
+#!/bin/bash
+
+REGION="US"
+BUCKET_NAME="gs://demos-vertex-ai-bq-staging"
+
 # create gcs bucket 
 # gsutil mb -l $REGION $BUCKET_NAME
 
+echo $REGION
+echo $BUCKET_NAME
+
 # download data from source & upload to gcs 
-curl https://raw.githubusercontent.com/sedeh/Datasets/main/loan_200k.csv | gsutil cp - gs://demos-vertex-ai-bq-staging/loan_200k.csv
+# curl https://raw.githubusercontent.com/sedeh/Datasets/main/loan_200k.csv | gsutil cp - gs://demos-vertex-ai-bq-staging/loan_200k.csv
 
 # references 
 # https: // www.linkedin.com/pulse/one-hot-vs-target-encoding-samuel-edeh/
