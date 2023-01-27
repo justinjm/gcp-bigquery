@@ -195,18 +195,14 @@ BigQuery ML
 
 * [What is BigQuery ML?  |  Google Cloud](https://cloud.google.com/bigquery-ml/docs/introduction)
 
-Power BI 
+Power BI
 
 * once BI Engine Reservation is configured on a project, queries will become eligible for acceleration by BI Engine regardless of API/BI tool used.
-
 
 ## Acknowledgements
 
 [zaratsian/gcp\_bigquery: Google Cloud BigQuery - Scripts and References](https://github.com/zaratsian/gcp_bigquery)
 
-
 ## Open in Cloud Shell 
-
-
 
 Reference: [Open in Cloud Shell  |  Google Cloud](https://cloud.google.com/shell/docs/open-in-cloud-shell)
