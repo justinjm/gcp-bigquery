@@ -1,5 +1,9 @@
 # Google Cloud BigQuery
 
+To open this repository in cloud shell, click below:
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fjustinjm%2Fgcp-bigquery)
+
 ## Overview
 
 * Fully managed Relational DB  
@@ -204,6 +208,5 @@ Power BI
 ## Open in Cloud Shell 
 
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fjustinjm%2Fgcp-bigquery)
 
-[Open in Cloud Shell  |  Google Cloud](https://cloud.google.com/shell/docs/open-in-cloud-shell)
+Reference: [Open in Cloud Shell  |  Google Cloud](https://cloud.google.com/shell/docs/open-in-cloud-shell)
