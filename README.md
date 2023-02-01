@@ -49,7 +49,9 @@ Each project that you create has a billing account attached to it. Any charges i
 
 * Project-level access control  
 * Dataset-level access control  
-* **NOT** Table-level access control  
+* Table-level access control
+  * <https://cloud.google.com/bigquery/docs/control-access-to-resources-iam>
+* **NOT** routines or models 
 * Public Datasets (“all authenticated users” ROLE)  
 * Primitive Roles: Owner, Editor, and Viewer  
 * Predefined Roles:  
