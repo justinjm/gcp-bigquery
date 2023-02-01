@@ -16,8 +16,8 @@ demos-vertex-ai:biglake_demo
 1. upload sample data to GCS 
 
 ```sh
-gsutil cp ./data/airports.csv gs://demos-vertex-ai/airports.csv
-# gsutil cp gs://cloud-training/CPB200/BQ/lab4/airports.csv gs://demos-vertex-ai/airports-test.csv
+gsutil cp gs://cloud-training/CPB200/BQ/lab4/airports.csv gs://demos-vertex-ai/airports-test.csv
+# gsutil cp ./data/airports.csv gs://demos-vertex-ai/airports.csv
 ```
 
 2. create BigLake connection 
